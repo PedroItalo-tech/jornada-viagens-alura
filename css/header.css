@@ -1,7 +1,8 @@
 header {
   background-color: var(--background-tertiary-color);
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /*row, esquerda para direita | row-reverse, direita para esquerda | column, cima para baixo| column-reverse, baixo para cima*/
+  /* flex-wrap: ; nowrap, todos os flex em uma única linha||| */
   justify-content: space-between;
   align-items: flex-start;
   padding: 37px 48px;
@@ -13,9 +14,9 @@ header {
   height: 64px;
 }
 
-.navigation-menu{
-    margin-top: 24px;
+.navigation-menu {
+  margin-top: 24px;
 }
-nav{
-    display: none;
+nav {
+  display: none;
 }
