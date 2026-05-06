@@ -2,10 +2,10 @@ header {
   background-color: var(--background-tertiary-color);
   display: flex;
   flex-direction: row; /*row, esquerda para direita | row-reverse, direita para esquerda | column, cima para baixo| column-reverse, baixo para cima*/
-  /* flex-wrap: ; nowrap, todos os flex em uma única linha||| */
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: space-between; /*Coloca um espaço entre a logo e o hamburguer*/
+  align-items: flex-start; /*Alinha os elementos pelo topo do header*/
   padding: 37px 48px;
+  position: relative;
 }
 
 .logo {
@@ -19,9 +19,28 @@ header {
 }
 
 input[type="checkbox"]:checked ~ nav {
+  /*o "~" procura a tag irmã*/
   display: block;
+  position: absolute; /*Não consegue mover o "relative" de canto*/
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--background-tertiary-color);
 }
 
 nav {
   display: none;
+}
+
+.list-links {
+  list-style: none;
+}
+
+.list-links li {
+  margin: 16px 0;
+}
+
+.list-links li a{
+  color: var(--text-secondary-color);
+  text-decoration: none;
 }

@@ -9,20 +9,27 @@
   </head>
   <body>
     <header>
-      <a class="logo" href="index.html" title="Voltar para a página inicial"
-        ><img
+      <a class="logo" href="index.html" title="Voltar para a página inicial">
+        <!--A tag "a" crian links, nesse caso, ele volta para o index e adiciona o título para acessibilidade-->
+        <img
           src="img/bussola-jornada-branca.png"
           alt="Bussola do logo Jornada Viagens na cor preta"
         />
+        <!--A tag "img" serve para imagens, o "src, source" é o caminho onde a imagem se encontra e o "alt, alternativefalt" é a descrição da imagem para acessibilidade-->
       </a>
       <div class="navigation-menu">
+        <!--Modo genérico de agrupar elemntos-->
         <label for="menu">
+          <!--Forcene uma área de clique-->
           <img src="img/menu.png" alt="menu" />
         </label>
-        <input type="checkbox" id="menu" />
+        <input type="checkbox" id="menu" hidden/>
         <nav>
-          <ul>
+          <!--A tag "nav, navigation" serve para identificar um bloco que contém links-->
+          <ul class="list-links">
+            <!--A tag "ul, unordered list" cria uma lista não ordenada-->
             <li>
+              <!--A tag "li, list item" é cada item individual da lista-->
               <a href="blog.html" target="_blank" title="Acessar blog">Blog</a>
             </li>
             <li>
@@ -44,3 +51,12 @@
     </header>
   </body>
 </html>
+
+<!--"href, hypertext reference" diz ao navegador onde o usuário deve ser levado-->
+<!--"src, source" aponta para algo que deve trazer-->
+<!--"id, identity" é o CPF de um elemento-->
+<!--"for" é feito para conectar uma tag com um id-->
+<!--"type" define se é checkbox, text...-->
+<!--"class" agrupa elementos para que o CSS possa estilizar tudo de um determinado local-->
+<!--"target" define onde o link será aberto, "_blank"-->
+<!--"alt" cria um texto alternativo para acessibilidade-->
